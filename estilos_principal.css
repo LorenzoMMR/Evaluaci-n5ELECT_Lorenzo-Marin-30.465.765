@@ -1,0 +1,229 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Estilos para el cuerpo de la página */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    background-image: url(Img/FondoPrin.jpg);
+    background-size: cover;
+    zoom: 80%;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para la navegación */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  nav ul li.contacto a {
+    background-color: #f00;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  nav ul li.iniciar-sesion a {
+    background-color: #00f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  nav ul li.contacto a:hover, nav ul li.iniciar-sesion a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Estilos para el logo */
+  nav img {
+    float: left;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    max-width: 960px;
+    margin: 6rem auto 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    margin: 1.5rem 0 3rem;
+  }
+  
+  /* Estilos para los encabezados de sección */
+  section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Estilos para los servicios */
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  .servicio {
+    background-color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    grid-row: span 2;
+  }
+  
+  .servicio img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 5px solid #f7f7f7;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .servicio img:hover {
+    transform: scale(1.05);
+  }
+  
+  .servicio h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .servicio p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  /* Estilos para la ubicación */
+  .edificio {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edificio img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 5px solid #f7f7f7;
+    border-radius:5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .edificio img:hover {
+    transform: scale(1.05);
+  }
+  
+  .edificio p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para la navegación del pie de página */
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer nav ul li {
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer nav ul li a:hover {
+    background-color: #555;
+  }

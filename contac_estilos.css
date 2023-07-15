@@ -1,0 +1,194 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(Img/FondoPrincipal.jpg);
+    background-size: cover;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden; 
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  /* Estilos para el título */
+  form h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos para los campos del formulario */
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    border-color: #00bfff;
+  }
+  
+  form input[type="submit"] {
+    background-color: #00bfff;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #009acd;
+  }
+  
+  /* Estilos para los errores del formulario */
+  form .error {
+    color: #ff0000;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para los mensajes de éxito del formulario */
+  form .success {
+    color: #00ff00;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para los botones */
+  button[type="submit"],
+  button[type="button"] {
+    background-color: #00bfff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 20px;
+    width: 200px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="button"]:hover {
+    background-color: #009acd;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  
+  /* Estilos personalizados para el formulario */
+  #contacto-form {
+    margin-top: 2rem;
+  }
+  
+  #contacto-form input[type="submit"],
+  #contacto-form button[type="button"] {
+    background-color: #00ff00;
+    border-color: #000;
+  }
+  
+  #contacto-form input[type="submit"]:hover,
+  #contacto-form button[type="button"]:hover {
+    background-color: #009933;
+    box-shadow: none;
+  }
+  
+  #mensaje-enviado {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #009acd;
+    border-radius: 5px;
+    animation: fadeIn 1s ease;
+  }
+  
+  #mensaje-enviado a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  #mensaje-enviado a:hover {
+    text-decoration: none;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 600px) {
+    form {
+      padding: 1rem;
+    }
+  
+    form input[type="submit"],
+    form button[type="button"] {
+      width: 100%;
+    }
+  }

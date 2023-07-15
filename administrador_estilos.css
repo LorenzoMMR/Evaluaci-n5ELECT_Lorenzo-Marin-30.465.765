@@ -1,0 +1,288 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  zoom: 80%;
+}
+
+body {
+  background-image: url('Img/FondoPrin.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden; 
+}
+
+/* Estilos para los encabezados */
+h1, h2 {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 50px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 30px 0 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  margin: 20px auto;
+  background-color: #00bfff;
+}
+
+/* Estilos para los formularios */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #282828;
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-bottom: 2px solid #00bfff;
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  input[type="password"]:focus {
+    border-bottom: 2px solid #00bfff;
+  }
+
+input[type="submit"] {
+  background-color: #00bfff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #009acd;
+}
+
+/* Estilos para las tablas */
+table {
+  border-collapse: collapse;
+  margin: 0 auto 50px;
+  max-width: 100%; 
+  width: 90%;
+}
+
+th,
+td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #00bfff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+td {
+  background-color: #282828;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-generar-reporte,
+.btn-generar-reporte-personalizado {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-generar-reporte:hover,
+.btn-generar-reporte-personalizado:hover {
+  background-color: #fff;
+  color: #282828;
+}
+
+.btn-generar-reporte {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+.btn-generar-reporte-personalizado {
+  border-color: #ff8c00;
+  color: #ff8c00;
+}
+
+/* Estilos para los botones de acción */
+.btn-editar,
+.btn-eliminar,
+.btn-generar-reporte,
+.btn-generar-reporte-personalizado {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover,
+.btn-generar-reporte:hover,
+.btn-generar-reporte-personalizado:hover {
+  background-color: #fff;
+  color: #282828;
+}
+
+.btn-eliminar {
+  border-color: #ff0000;
+}
+
+.btn-editar {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+.btn-generar-reporte {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+.btn-generar-reporte-personalizado {
+  border-color: #ff8c00;
+  color: #ff8c00;
+}
+
+/* Estilos específicos para la página de contacto */
+section {
+  margin-top: 50px;
+}
+
+.exito {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+nav {
+    background-color: #282828;
+    border-bottom: 2px solid #fff;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }

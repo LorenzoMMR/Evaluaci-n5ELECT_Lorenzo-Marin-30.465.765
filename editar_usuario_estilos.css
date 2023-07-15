@@ -1,0 +1,148 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(Img/FondoPrincipal.jpg);
+    background-size: cover;
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden; 
+  }
+  
+  /* Estilos para los formularios */
+  form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #282828;
+    margin-bottom: 50px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  input[type="email"] {
+    background-color: #1a1a1a;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  input[type="email"]:focus {
+    border-bottom: 2px solid #00bfff;
+  }
+  
+  button[type="submit"] {
+    background-color: #00bfff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid #fff; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #009acd;
+    box-shadow: none;
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Estilos para los mensajes de error */
+  .error {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Estilos para los mensajes de éxito */
+  .success {
+    color: #00ff00;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Estilos específicos para los botones de acción */
+  .btn-editar,
+  .btn-eliminar {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-editar:hover,
+  .btn-eliminar:hover {
+    background-color: #fff;
+    color: #282828;
+  }
+  
+  .btn-eliminar {
+    border-color: #ff0000;
+  }
+  
+  .btn-editar {
+    border-color: #00bfff;
+    color: #00bfff;
+  }
+
+  input[type="submit"][name="editar_usuario"] {
+    background-color: #00bfff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 20px;
+    width: 200px; 
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"][name="editar_usuario"]:hover {
+    background-color: #009acd;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+  }
